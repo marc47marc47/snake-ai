@@ -262,7 +262,7 @@ if __name__ == "__main__":
     start_button = game.font.render("START", True, (0, 0, 0))
     retry_button = game.font.render("RETRY", True, (0, 0, 0))
 
-    update_interval = 0.15
+    update_interval = 0.05
     start_time = time.time()
     action = -1
 
@@ -291,7 +291,7 @@ if __name__ == "__main__":
                         game.screen.fill((0, 0, 0))
                         game.draw_countdown(i)
                         game.sound_eat.play()
-                        pygame.time.wait(1000)
+                        pygame.time.wait(500)
                     action = -1  # Reset action variable when starting a new game
                     game_state = "running"
 
